@@ -1,0 +1,113 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   background-color: grey;
+}
+
+.container a{
+   text-decoration: none;
+}
+
+#header{
+   
+   a{
+      float: left;
+      padding: 4px 10px;
+      font-weight: bolder;
+      text-decoration: none;
+   }
+
+   #toggler{
+      color: blue;
+      font-size: 30px;
+      margin-right: 10px;
+      float: right;
+      cursor: pointer;
+   }
+   position: fixed;
+   width: 100%;
+   z-index: 70;
+   background-color: white;
+   border: 1px solid blue;
+
+}
+
+.sidebar{
+   position: fixed;
+   transition: left ease-out 1.2s;
+   width: 20vw;
+   height: 100vh;
+   background: paleturquoise;
+   color: black;
+   left: -2000px;
+   z-index: 100;
+   
+   a{
+      display: block;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 6px 0;
+      margin: 0px 0;
+      width: 100%;
+      border-bottom: 1px solid grey;
+      text-align: center;
+      
+      &:hover{
+         background: orange;
+         color: white;
+      }
+      
+   }
+}
+
+.show{
+   position: absolute;
+   width: 20vw;
+   height: 100vh;
+   background: paleturquoise;
+   color: black;
+   left: 0;
+}
+
+.toggle-output{
+   left: 0;
+}
+
+#main{
+   position: relative;
+   top: 70px;
+}
+
+#section1{
+   background: white;
+   padding: 15px;
+   font-size: 20px;
+}
+
+#section2, #section3{
+   background: white;
+   padding: 20px;
+   margin: 50px 5px;
+   font-size: 20px;
+   font-family: verdana;
+}
+
+#footer{
+   background-color: lavenderblush;
+   padding: 8px;
+   font-family: cursive;
+   font-size: 20px;
+   text-align: center;
+}
+
+#pagecontrol{
+
+}
